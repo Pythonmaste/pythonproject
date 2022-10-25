@@ -1,0 +1,30 @@
+from tkinter import *
+from turtle import *
+root = Tk()
+## Made Eralp
+color('red', 'yellow')
+begin_fill()
+def sep():
+    forward(100)
+def lef():
+    left(90)
+def rig():
+    right(90)
+
+
+btn = Button(
+    text="forward",
+    command=sep
+)
+lef = Button(
+    text="left",
+    command=lef
+)
+ri = Button(
+    text="right",
+    command=rig
+)
+btn.pack()
+lef.pack()
+ri.pack()
+root.mainloop()
